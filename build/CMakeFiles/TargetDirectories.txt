@@ -1,0 +1,3 @@
+/home/edirent/sweep/build/CMakeFiles/sweep_core.dir
+/home/edirent/sweep/build/CMakeFiles/edit_cache.dir
+/home/edirent/sweep/build/CMakeFiles/rebuild_cache.dir
