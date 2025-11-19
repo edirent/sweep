@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dsweep_core_EXPORTS
 
-CXX_INCLUDES = -isystem /home/edirent/miniconda3/envs/sweep/include/python3.12 -isystem /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include
+CXX_INCLUDES = -I/home/edirent/sweep/cpp -isystem /home/edirent/miniconda3/envs/sweep/include/python3.12 -isystem /home/edirent/miniconda3/envs/sweep/include
 
-CXX_FLAGS = -std=gnu++17 -fPIC -fvisibility=hidden -flto=auto -fno-fat-lto-objects
+CXX_FLAGS = -O3 -DNDEBUG -std=c++17 -fPIC -fvisibility=hidden -flto=auto -fno-fat-lto-objects
 

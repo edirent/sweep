@@ -3,6 +3,36 @@
 
 CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o
  /home/edirent/sweep/cpp/bindings.cpp
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/attr.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/buffer_info.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/cast.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/conduit/pybind11_platform_abi_id.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/conduit/wrap_include_python_h.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/class.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/common.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/cpp_conduit.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/descr.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/dynamic_raw_ptr_cast_if_possible.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/exception_translation.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/function_record_pyobject.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/init.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/internals.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/native_enum_data.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/pybind11_namespace_macros.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/struct_smart_holder.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/type_caster_base.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/typeid.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/using_smart_holder.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/detail/value_and_holder.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/gil.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/gil_safe_call_once.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/gil_simple.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/options.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/pybind11.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/pytypes.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/stl.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/trampoline_self_life_support.h
+ /home/edirent/miniconda3/envs/sweep/include/pybind11/typing.h
  /home/edirent/miniconda3/envs/sweep/include/python3.12/Python.h
  /home/edirent/miniconda3/envs/sweep/include/python3.12/abstract.h
  /home/edirent/miniconda3/envs/sweep/include/python3.12/bltinmodule.h
@@ -114,36 +144,7 @@ CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o
  /home/edirent/miniconda3/envs/sweep/include/python3.12/unicodeobject.h
  /home/edirent/miniconda3/envs/sweep/include/python3.12/warnings.h
  /home/edirent/miniconda3/envs/sweep/include/python3.12/weakrefobject.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/attr.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/buffer_info.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/cast.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/conduit/pybind11_platform_abi_id.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/conduit/wrap_include_python_h.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/class.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/common.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/cpp_conduit.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/descr.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/dynamic_raw_ptr_cast_if_possible.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/exception_translation.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/function_record_pyobject.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/init.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/internals.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/native_enum_data.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/pybind11_namespace_macros.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/struct_smart_holder.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/type_caster_base.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/typeid.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/using_smart_holder.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/detail/value_and_holder.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/gil.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/gil_safe_call_once.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/gil_simple.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/options.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/pybind11.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/pytypes.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/stl.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/trampoline_self_life_support.h
- /home/edirent/miniconda3/envs/sweep/lib/python3.12/site-packages/pybind11/include/pybind11/typing.h
+ /home/edirent/sweep/cpp/mean_reversion_strategy.h
  /home/edirent/sweep/cpp/sweep_model.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
@@ -415,7 +416,9 @@ CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
  /usr/include/x86_64-linux-gnu/bits/sched.h
+ /usr/include/x86_64-linux-gnu/bits/select-decl.h
  /usr/include/x86_64-linux-gnu/bits/select.h
+ /usr/include/x86_64-linux-gnu/bits/select2.h
  /usr/include/x86_64-linux-gnu/bits/setjmp.h
  /usr/include/x86_64-linux-gnu/bits/stat.h
  /usr/include/x86_64-linux-gnu/bits/statx-generic.h
@@ -423,8 +426,15 @@ CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h
@@ -463,10 +473,14 @@ CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/unistd-decl.h
+ /usr/include/x86_64-linux-gnu/bits/unistd.h
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
  /usr/include/x86_64-linux-gnu/bits/wchar.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h
  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
@@ -495,6 +509,80 @@ CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
+
+CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o
+ /home/edirent/sweep/cpp/mean_reversion_strategy.cpp
+ /home/edirent/sweep/cpp/mean_reversion_strategy.h
+ /home/edirent/sweep/cpp/sweep_model.h
+ /usr/include/c++/13/backward/binders.h
+ /usr/include/c++/13/bit
+ /usr/include/c++/13/bits/alloc_traits.h
+ /usr/include/c++/13/bits/allocator.h
+ /usr/include/c++/13/bits/concept_check.h
+ /usr/include/c++/13/bits/cpp_type_traits.h
+ /usr/include/c++/13/bits/deque.tcc
+ /usr/include/c++/13/bits/exception.h
+ /usr/include/c++/13/bits/exception_defines.h
+ /usr/include/c++/13/bits/functexcept.h
+ /usr/include/c++/13/bits/invoke.h
+ /usr/include/c++/13/bits/memory_resource.h
+ /usr/include/c++/13/bits/memoryfwd.h
+ /usr/include/c++/13/bits/move.h
+ /usr/include/c++/13/bits/new_allocator.h
+ /usr/include/c++/13/bits/predefined_ops.h
+ /usr/include/c++/13/bits/ptr_traits.h
+ /usr/include/c++/13/bits/range_access.h
+ /usr/include/c++/13/bits/refwrap.h
+ /usr/include/c++/13/bits/requires_hosted.h
+ /usr/include/c++/13/bits/stl_algobase.h
+ /usr/include/c++/13/bits/stl_construct.h
+ /usr/include/c++/13/bits/stl_deque.h
+ /usr/include/c++/13/bits/stl_function.h
+ /usr/include/c++/13/bits/stl_iterator.h
+ /usr/include/c++/13/bits/stl_iterator_base_funcs.h
+ /usr/include/c++/13/bits/stl_iterator_base_types.h
+ /usr/include/c++/13/bits/stl_pair.h
+ /usr/include/c++/13/bits/stl_uninitialized.h
+ /usr/include/c++/13/bits/uses_allocator.h
+ /usr/include/c++/13/bits/uses_allocator_args.h
+ /usr/include/c++/13/bits/utility.h
+ /usr/include/c++/13/cstddef
+ /usr/include/c++/13/cstdint
+ /usr/include/c++/13/debug/assertions.h
+ /usr/include/c++/13/debug/debug.h
+ /usr/include/c++/13/deque
+ /usr/include/c++/13/ext/alloc_traits.h
+ /usr/include/c++/13/ext/numeric_traits.h
+ /usr/include/c++/13/ext/type_traits.h
+ /usr/include/c++/13/initializer_list
+ /usr/include/c++/13/new
+ /usr/include/c++/13/pstl/pstl_config.h
+ /usr/include/c++/13/tuple
+ /usr/include/c++/13/type_traits
+ /usr/include/features-time64.h
+ /usr/include/features.h
+ /usr/include/stdc-predef.h
+ /usr/include/stdint.h
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+ /usr/include/x86_64-linux-gnu/bits/long-double.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+ /usr/include/x86_64-linux-gnu/bits/time64.h
+ /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/x86_64-linux-gnu/bits/types.h
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h
+ /usr/include/x86_64-linux-gnu/bits/wchar.h
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h
+ /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/sweep_core.dir/cpp/sweep_model.cpp.o
  /home/edirent/sweep/cpp/sweep_model.cpp

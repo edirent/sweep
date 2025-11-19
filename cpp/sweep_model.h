@@ -9,25 +9,38 @@ enum class Side {
 
 enum class SweepSignal {
     NoSignal = 0,
-    UpSweep = 1,
+    UpSweep  = 1,
     DownSweep = -1
 };
 
 struct Tick {
-    double timestamp;   // 秒，比如 1700000000.123
+    double timestamp;   // 秒
     double price;
-    double volume;      // 成交量
-    Side   side;        // taker 买/卖
+    double volume;
+    Side   side;
+};
+
+// 单次 sweep 事件的元信息（给 Python 用）
+struct SweepEventMeta {
+    double ts_start;     // 事件起始时间（约等于窗口开始）
+    double ts_end;       // 事件结束时间（触发时刻）
+    double price_start;  // 窗口开始时价格（近似）
+    double price_end;    // 触发时价格
+    double volume_total; // 窗口内总成交量
+    int    direction;    // 1=Up, -1=Down
 };
 
 class SweepModel {
 public:
-    SweepModel(double short_window_sec = 2.0,
-               double long_window_sec  = 20.0,
+    SweepModel(double short_window_sec = 0.3,   // 典型 sweep 时间窗：0.1~0.5s
+               double long_window_sec  = 10.0,  // 长期参考：几秒到几十秒
                double threshold_ratio  = 3.0);
 
-    // 喂一条 tick，返回本 tick 是否触发 sweep 信号
+    // 喂一条 tick，若触发 sweep，则返回 UpSweep/DownSweep，否则 NoSignal
     SweepSignal process_tick(const Tick& tick);
+
+    // 返回最近一次触发的 sweep 事件信息（若无，direction=0）
+    SweepEventMeta get_last_event() const { return last_event_; }
 
 private:
     double short_win_;
@@ -40,6 +53,17 @@ private:
     double short_sell_vol_;
     double long_buy_vol_;
     double long_sell_vol_;
+
+    // 去抖/状态
+    bool   in_sweep_;
+    double last_sweep_ts_;
+
+    // 上一个价格（用于估计 price_start）
+    double last_price_;
+    bool   has_last_price_;
+
+    // 最近一次触发的 sweep 事件
+    SweepEventMeta last_event_;
 
     void evict_old(double current_ts);
 };

@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -flto=auto -shared  -o sweep_core.cpython-312-x86_64-linux-gnu.so CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o CMakeFiles/sweep_core.dir/cpp/sweep_model.cpp.o 
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -flto=auto -shared  -o sweep_core.cpython-312-x86_64-linux-gnu.so CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o CMakeFiles/sweep_core.dir/cpp/sweep_model.cpp.o CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o 

@@ -81,12 +81,12 @@ clean: CMakeFiles/sweep_core.dir/clean
 CMakeFiles/sweep_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/edirent/sweep/build/CMakeFiles --progress-num=1,2,3 "Built target sweep_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/edirent/sweep/build/CMakeFiles --progress-num=1,2,3,4 "Built target sweep_core"
 .PHONY : CMakeFiles/sweep_core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sweep_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edirent/sweep/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edirent/sweep/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sweep_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/edirent/sweep/build/CMakeFiles 0
 .PHONY : CMakeFiles/sweep_core.dir/rule

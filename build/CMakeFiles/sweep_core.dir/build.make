@@ -97,19 +97,35 @@ CMakeFiles/sweep_core.dir/cpp/sweep_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sweep_core.dir/cpp/sweep_model.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edirent/sweep/cpp/sweep_model.cpp -o CMakeFiles/sweep_core.dir/cpp/sweep_model.cpp.s
 
+CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o: CMakeFiles/sweep_core.dir/flags.make
+CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o: /home/edirent/sweep/cpp/mean_reversion_strategy.cpp
+CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o: CMakeFiles/sweep_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/edirent/sweep/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o -MF CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o.d -o CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o -c /home/edirent/sweep/cpp/mean_reversion_strategy.cpp
+
+CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edirent/sweep/cpp/mean_reversion_strategy.cpp > CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.i
+
+CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edirent/sweep/cpp/mean_reversion_strategy.cpp -o CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.s
+
 # Object files for target sweep_core
 sweep_core_OBJECTS = \
 "CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o" \
-"CMakeFiles/sweep_core.dir/cpp/sweep_model.cpp.o"
+"CMakeFiles/sweep_core.dir/cpp/sweep_model.cpp.o" \
+"CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o"
 
 # External object files for target sweep_core
 sweep_core_EXTERNAL_OBJECTS =
 
 sweep_core.cpython-312-x86_64-linux-gnu.so: CMakeFiles/sweep_core.dir/cpp/bindings.cpp.o
 sweep_core.cpython-312-x86_64-linux-gnu.so: CMakeFiles/sweep_core.dir/cpp/sweep_model.cpp.o
+sweep_core.cpython-312-x86_64-linux-gnu.so: CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o
 sweep_core.cpython-312-x86_64-linux-gnu.so: CMakeFiles/sweep_core.dir/build.make
 sweep_core.cpython-312-x86_64-linux-gnu.so: CMakeFiles/sweep_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/edirent/sweep/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module sweep_core.cpython-312-x86_64-linux-gnu.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/edirent/sweep/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared module sweep_core.cpython-312-x86_64-linux-gnu.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sweep_core.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/strip /home/edirent/sweep/build/sweep_core.cpython-312-x86_64-linux-gnu.so
 

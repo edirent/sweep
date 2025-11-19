@@ -153,6 +153,30 @@ cpp/bindings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/cpp/bindings.cpp.s
 .PHONY : cpp/bindings.cpp.s
 
+cpp/mean_reversion_strategy.o: cpp/mean_reversion_strategy.cpp.o
+.PHONY : cpp/mean_reversion_strategy.o
+
+# target to build an object file
+cpp/mean_reversion_strategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.o
+.PHONY : cpp/mean_reversion_strategy.cpp.o
+
+cpp/mean_reversion_strategy.i: cpp/mean_reversion_strategy.cpp.i
+.PHONY : cpp/mean_reversion_strategy.i
+
+# target to preprocess a source file
+cpp/mean_reversion_strategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.i
+.PHONY : cpp/mean_reversion_strategy.cpp.i
+
+cpp/mean_reversion_strategy.s: cpp/mean_reversion_strategy.cpp.s
+.PHONY : cpp/mean_reversion_strategy.s
+
+# target to generate assembly for a file
+cpp/mean_reversion_strategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.s
+.PHONY : cpp/mean_reversion_strategy.cpp.s
+
 cpp/sweep_model.o: cpp/sweep_model.cpp.o
 .PHONY : cpp/sweep_model.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... cpp/bindings.o"
 	@echo "... cpp/bindings.i"
 	@echo "... cpp/bindings.s"
+	@echo "... cpp/mean_reversion_strategy.o"
+	@echo "... cpp/mean_reversion_strategy.i"
+	@echo "... cpp/mean_reversion_strategy.s"
 	@echo "... cpp/sweep_model.o"
 	@echo "... cpp/sweep_model.i"
 	@echo "... cpp/sweep_model.s"
