@@ -1,0 +1,10 @@
+2025-11-21 04:35:21 Starting live strategy for ETHUSDT, MODE=paper
+2025-11-21 04:35:22 WS opened
+2025-11-21 04:35:22 Subscribed: publicTrade.ETHUSDT
+2025-11-21 04:35:22 [SWEEP] sig=UpSweep dir=1 ts=1763685322.703 price_end=2846.81 vol=0.01
+2025-11-21 04:35:22 [ACT] from_sweep <sweep_core.StrategyAction object at 0x7d126e2c0230>
+2025-11-21 04:35:22 [SIGNAL] OPEN SHORT ts=1763685322.708 price=2846.81
+2025-11-21 04:35:33 [ACT] from_tick <sweep_core.StrategyAction object at 0x7d126e2cbe30>
+2025-11-21 04:35:33 [PNL] close mark_pnl=-2.2900, cum_pnl=-2.2900, win_rate= 0.0% (wins=0, losses=1)
+2025-11-21 04:35:33 [SIGNAL] CLOSE dir=-1 ts=1763685333.434 price=2849.1
+2025-11-21 04:35:51 Main loop interrupted, exit.

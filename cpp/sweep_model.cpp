@@ -25,28 +25,31 @@ SweepModel::SweepModel(double short_window_sec,
 }
 
 void SweepModel::evict_old(double current_ts) {
-    // 移出 long_window 之外的 tick，并更新 long_* 和 short_* 统计
-    while (!window_.empty() &&
-           current_ts - window_.front().timestamp > long_win_) {
-        const Tick& t = window_.front();
+    // 移出 long_window 之外的 tick，并更新 long_* 统计
+    while (!window_long_.empty() &&
+           current_ts - window_long_.front().timestamp > long_win_) {
+        const Tick& t = window_long_.front();
         double vol = t.volume;
         if (t.side == Side::Buy) {
             long_buy_vol_  -= vol;
-            if (current_ts - t.timestamp <= short_win_) {
-                short_buy_vol_ -= vol;
-            }
         } else {
             long_sell_vol_ -= vol;
-            if (current_ts - t.timestamp <= short_win_) {
-                short_sell_vol_ -= vol;
-            }
         }
-        window_.pop_front();
+        window_long_.pop_front();
     }
 
-    // 简化版：short window 我只在添加新 tick 时累加，
-    // old tick 超出 short_win_ 后的精确减法可以通过更复杂结构实现；
-    // 这里先以“短窗口<<长窗口”的近似。
+    // 移出 short_window 之外的 tick，更新 short_* 统计
+    while (!window_short_.empty() &&
+           current_ts - window_short_.front().timestamp > short_win_) {
+        const Tick& t = window_short_.front();
+        double vol = t.volume;
+        if (t.side == Side::Buy) {
+            short_buy_vol_ -= vol;
+        } else {
+            short_sell_vol_ -= vol;
+        }
+        window_short_.pop_front();
+    }
 }
 
 SweepSignal SweepModel::process_tick(const Tick& tick) {
@@ -62,7 +65,8 @@ SweepSignal SweepModel::process_tick(const Tick& tick) {
     }
 
     // 将当前 tick 加入窗口并更新统计量
-    window_.push_back(tick);
+    window_long_.push_back(tick);
+    window_short_.push_back(tick);
     double vol = tick.volume;
     if (tick.side == Side::Buy) {
         short_buy_vol_ += vol;

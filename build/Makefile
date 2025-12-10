@@ -177,6 +177,30 @@ cpp/mean_reversion_strategy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/cpp/mean_reversion_strategy.cpp.s
 .PHONY : cpp/mean_reversion_strategy.cpp.s
 
+cpp/orderflow_features.o: cpp/orderflow_features.cpp.o
+.PHONY : cpp/orderflow_features.o
+
+# target to build an object file
+cpp/orderflow_features.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/cpp/orderflow_features.cpp.o
+.PHONY : cpp/orderflow_features.cpp.o
+
+cpp/orderflow_features.i: cpp/orderflow_features.cpp.i
+.PHONY : cpp/orderflow_features.i
+
+# target to preprocess a source file
+cpp/orderflow_features.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/cpp/orderflow_features.cpp.i
+.PHONY : cpp/orderflow_features.cpp.i
+
+cpp/orderflow_features.s: cpp/orderflow_features.cpp.s
+.PHONY : cpp/orderflow_features.s
+
+# target to generate assembly for a file
+cpp/orderflow_features.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sweep_core.dir/build.make CMakeFiles/sweep_core.dir/cpp/orderflow_features.cpp.s
+.PHONY : cpp/orderflow_features.cpp.s
+
 cpp/sweep_model.o: cpp/sweep_model.cpp.o
 .PHONY : cpp/sweep_model.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... cpp/mean_reversion_strategy.o"
 	@echo "... cpp/mean_reversion_strategy.i"
 	@echo "... cpp/mean_reversion_strategy.s"
+	@echo "... cpp/orderflow_features.o"
+	@echo "... cpp/orderflow_features.i"
+	@echo "... cpp/orderflow_features.s"
 	@echo "... cpp/sweep_model.o"
 	@echo "... cpp/sweep_model.i"
 	@echo "... cpp/sweep_model.s"

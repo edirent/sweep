@@ -47,7 +47,9 @@ private:
     double long_win_;
     double threshold_ratio_;
 
-    std::deque<Tick> window_;   // 保存最近 long_window_sec 内的 tick
+    // 两层窗口：长窗口用于基线，短窗口用于即时爆发
+    std::deque<Tick> window_long_;   // 保存最近 long_window_sec 内的 tick
+    std::deque<Tick> window_short_;  // 保存最近 short_window_sec 内的 tick
 
     double short_buy_vol_;
     double short_sell_vol_;

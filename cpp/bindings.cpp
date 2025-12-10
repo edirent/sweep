@@ -4,6 +4,7 @@
 
 #include "sweep_model.h"
 #include "mean_reversion_strategy.h"
+#include "orderflow_features.h"
 
 namespace py = pybind11;
 
@@ -73,4 +74,56 @@ PYBIND11_MODULE(sweep_core, m) {
              py::arg("sl_bp")    = 2.0)
         .def("on_sweep", &MeanReversionStrategy::on_sweep)
         .def("on_tick",  &MeanReversionStrategy::on_tick);
+
+    // --- Orderflow frame & extractor ---
+    py::enum_<AggRunDir>(m, "AggRunDir")
+        .value("None", AggRunDir::None)
+        .value("Buy",  AggRunDir::Buy)
+        .value("Sell", AggRunDir::Sell);
+
+    py::enum_<WeakSide>(m, "WeakSide")
+        .value("None", WeakSide::None)
+        .value("Bid",  WeakSide::Bid)
+        .value("Ask",  WeakSide::Ask);
+
+    py::class_<OrderFlowFrame>(m, "OrderFlowFrame")
+        .def_readonly("ts", &OrderFlowFrame::ts)
+        .def_readonly("mid", &OrderFlowFrame::mid)
+        .def_readonly("best_bid", &OrderFlowFrame::best_bid)
+        .def_readonly("best_ask", &OrderFlowFrame::best_ask)
+        .def_readonly("buy_vol_1s", &OrderFlowFrame::buy_vol_1s)
+        .def_readonly("sell_vol_1s", &OrderFlowFrame::sell_vol_1s)
+        .def_readonly("buy_vol_3s", &OrderFlowFrame::buy_vol_3s)
+        .def_readonly("sell_vol_3s", &OrderFlowFrame::sell_vol_3s)
+        .def_readonly("buy_vol_10s", &OrderFlowFrame::buy_vol_10s)
+        .def_readonly("sell_vol_10s", &OrderFlowFrame::sell_vol_10s)
+        .def_readonly("buy_share_1s", &OrderFlowFrame::buy_share_1s)
+        .def_readonly("sell_share_1s", &OrderFlowFrame::sell_share_1s)
+        .def_readonly("buy_share_3s", &OrderFlowFrame::buy_share_3s)
+        .def_readonly("sell_share_3s", &OrderFlowFrame::sell_share_3s)
+        .def_readonly("buy_share_10s", &OrderFlowFrame::buy_share_10s)
+        .def_readonly("sell_share_10s", &OrderFlowFrame::sell_share_10s)
+        .def_readonly("liq01_bid", &OrderFlowFrame::liq01_bid)
+        .def_readonly("liq01_ask", &OrderFlowFrame::liq01_ask)
+        .def_readonly("liq03_bid", &OrderFlowFrame::liq03_bid)
+        .def_readonly("liq03_ask", &OrderFlowFrame::liq03_ask)
+        .def_readonly("liq05_bid", &OrderFlowFrame::liq05_bid)
+        .def_readonly("liq05_ask", &OrderFlowFrame::liq05_ask)
+        .def_readonly("is_new_high_20s", &OrderFlowFrame::is_new_high_20s)
+        .def_readonly("is_new_low_20s", &OrderFlowFrame::is_new_low_20s)
+        .def_readonly("is_new_high_30s", &OrderFlowFrame::is_new_high_30s)
+        .def_readonly("is_new_low_30s", &OrderFlowFrame::is_new_low_30s)
+        .def_readonly("agg_run_dir", &OrderFlowFrame::agg_run_dir)
+        .def_readonly("weak_side_01", &OrderFlowFrame::weak_side_01);
+
+    py::class_<OrderFlowFeatureExtractor>(m, "OrderFlowFeatureExtractor")
+        .def(py::init<>())
+        .def("add_trade", &OrderFlowFeatureExtractor::add_trade,
+             py::arg("ts"), py::arg("price"), py::arg("volume"), py::arg("side"))
+        .def("apply_l2_snapshot", &OrderFlowFeatureExtractor::apply_l2_snapshot,
+             py::arg("bids"), py::arg("asks"))
+        .def("apply_l2_delta", &OrderFlowFeatureExtractor::apply_l2_delta,
+             py::arg("bids"), py::arg("asks"))
+        .def("get_frame", &OrderFlowFeatureExtractor::get_frame,
+             py::arg("ts_now") = 0.0);
 }

@@ -21,6 +21,7 @@ pybind11_add_module(sweep_core
     cpp/bindings.cpp
     cpp/sweep_model.cpp
     cpp/mean_reversion_strategy.cpp
+    cpp/orderflow_features.cpp
 )
 
 # 包含头文件目录（sweep_model.h / mean_reversion_strategy.h 在 cpp/ 目录）
